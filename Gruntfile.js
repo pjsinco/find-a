@@ -3,6 +3,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-contrib-watch");
   grunt.loadNpmTasks("grunt-contrib-compass");
   grunt.loadNpmTasks("grunt-contrib-jade");
+  grunt.loadNpmTasks("grunt-contrib-copy");
 
 
   grunt.initConfig({
@@ -30,6 +31,21 @@ module.exports = function(grunt) {
       }
     },
 
+    copy: {
+      main: {
+        options: {
+
+        },
+        files: [{
+          expand: true,
+          cwd: 'components/js',
+          src: ['*.js'],
+          dest: 'builds/dev/js',
+          ext: '.js' 
+        }]
+      }
+    },
+
     watch: {
       options: {
         livereload: true
@@ -43,6 +59,11 @@ module.exports = function(grunt) {
       compileHtml: {
         files: ['components/jade/*.jade'],
         tasks: ['jade']
+      },
+
+      copyJs: {
+        files: ['components/js/**/*.js'],
+        tasks: ['copy:main']
       }
     
     } // watch
