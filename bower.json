@@ -1,0 +1,21 @@
+{
+  "name": "find-a",
+  "version": "0.0.1",
+  "homepage": "https://github.com/pjsinco/find-a",
+  "authors": [
+    "Patrick Sinco <psinco@gmail.com>"
+  ],
+  "description": "Find-a something",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "typeahead.js": "~0.10.5"
+  }
+}
