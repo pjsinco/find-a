@@ -9,7 +9,7 @@ $(document).ready(function() {
     },
     queryTokenizer: Bloodhound.tokenizers.whitespace,
     limit: 10,
-    remote: {
+    prefetch: {
       url: './js/zips-abbrd.json',
       filter: function(d) {
         var arr = $.map(d, function(e) {

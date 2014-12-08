@@ -6,7 +6,7 @@ $(document).ready(function() {
   var nbaTeams = new Bloodhound({
 
     datumTokenizer: function(d) {
-      return Bloodhound.tokenizers.whitespace(d.team)
+      return Bloodhound.tokenizers.whitespace(d.team);
     },
     queryTokenizer: Bloodhound.tokenizers.whitespace,
     limit: 10,

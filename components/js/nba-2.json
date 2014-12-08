@@ -1,0 +1,122 @@
+[
+    {
+        "team": "Boston Celtics",
+        "player": "Bird"
+    },
+    {
+        "team": "Dallas Mavericks",
+        "player": "Dirk"
+    },
+    {
+        "team": "Brooklyn Nets",
+        "player": "Jay-Z"
+    },
+    {
+        "team": "Houston Rockets",
+        "player": "Hakeem"
+    },
+    {
+        "team": "New York Knicks",
+        "player": "Phil Jackson"
+    },
+    {
+        "team": "Memphis Grizzlies",
+        "player": "Zack"
+    },
+    {
+        "team": "Philadelphia 76ers",
+        "player": "Dr. J"
+    },
+    {
+        "team": "New Orleans Hornets",
+        "player": "Andrew"
+    },
+    {
+        "team": "Toronto Raptors",
+        "player": "Peterson"
+    },
+    {
+        "team": "San Antonio Spurs",
+        "player": "Gimobli"
+    },
+    {
+        "team": "Chicago Bulls",
+        "player": "Michael Jordan"
+    },
+    {
+        "team": "Denver Nuggets",
+        "player": "Mozgov"
+    },
+    {
+        "team": "Cleveland Cavaliers",
+        "player": "Lebron James"
+    },
+    {
+        "team": "Minnesota Timberwolves",
+        "player": "English"
+    },
+    {
+        "team": "Detroit Pistons",
+        "player": "Isiah Thomas"
+    },
+    {
+        "team": "Portland Trail Blazers",
+        "player": "Maurice Cheeks"
+    },
+    {
+        "team": "Indiana Pacers",
+        "player": "Scott Skiles"
+    },
+    {
+        "team": "Oklahoma City Thunder",
+        "player": "Kevin Durant"
+    },
+    {
+        "team": "Milwaukee Bucks",
+        "player": "Big Tall Guy"
+    },
+    {
+        "team": "Utah Jazz",
+        "player": "Mailman"
+    },
+    {
+        "team": "Atlanta Hawks",
+        "player": "Dominique Wilkins"
+    },
+    {
+        "team": "Golden State Warriors",
+        "player": "Have No Idea"
+    },
+    {
+        "team": "Charlotte Bobcats",
+        "player": "Rookie"
+    },
+    {
+        "team": "Los Angeles Clippers",
+        "player": "Redheaded Guy"
+    },
+    {
+        "team": "Miami Heat",
+        "player": "Lebron James"
+    },
+    {
+        "team": "Los Angeles Lakers",
+        "player": "Earvin 'Magic' Johnson"
+    },
+    {
+        "team": "Orlando Magic",
+        "player": "Shaquille O'Neal"
+    },
+    {
+        "team": "Phoenix Suns",
+        "player": "Steve Nash"
+    },
+    {
+        "team": "Washington Wizards",
+        "player": "Bullet Player from ABA"
+    },
+    {
+        "team": "Sacramento Kings",
+        "player": "Another Big Guy"
+    }
+]

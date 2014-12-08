@@ -1,19 +1,20 @@
 $(document).ready(function() {
 
-  console.log('zips abbrd');
+  console.log('zips abbrd city');
   
   var zipsAbbrd = new Bloodhound({
   
     datumTokenizer: function(d) {
-      return Bloodhound.tokenizers.whitespace(d.value);
+      console.log(d);
+      return Bloodhound.tokenizers.nonword(d.text);
     },
-    queryTokenizer: Bloodhound.tokenizers.whitespace,
+    queryTokenizer: Bloodhound.tokenizers.nonword,
     limit: 10,
     prefetch: {
       url: './js/zips-abbrd.json',
       filter: function(d) {
         var arr = $.map(d, function(e) {
-          return { value: e['zip'] };
+          return { text: e['text'] };
         });
         return arr;
       }
@@ -22,12 +23,12 @@ $(document).ready(function() {
 
   zipsAbbrd.initialize();
 
-  $('#select-zips-abbrd .typeahead')
+  $('#select-zips-abbrd-city .typeahead')
      .typeahead({
         highlight: true
       },{
         name: 'zips',
-        displayKey: 'value',
+        displayKey: 'text',
         source: zipsAbbrd.ttAdapter()
       });
 
