@@ -9,12 +9,13 @@ $(document).ready(function() {
     },
     queryTokenizer: Bloodhound.tokenizers.whitespace,
     limit: 10,
-    remote: {
+    prefetch: {
       url: './js/countries.json',
       filter: function(d) {
         var arr = $.map(d, function(e) {
           return { name: e };
         });
+        console.log(arr);
         return arr;
       }
     }
