@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Find-a play
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    link(rel='stylesheet' href='css/style.css')
+
+  body
+    div.container
+      h1 Zips Abbridged
+
+      div#select-zips-abbrd
+        input(type='text' placeholder='Enter Zip but we don\'t have all of them' autofocus).typeahead
+
+    script(src='js/jquery.min.js')
+    //-script(src='js/typeahead.bundle.min.js')
+    script(src='js/typeahead.bundle.js')
+    script(src='js/index-zips-abbrd.js')
+    script(src='http://localhost:35729/livereload.js')
+
