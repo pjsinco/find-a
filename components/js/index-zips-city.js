@@ -1,17 +1,16 @@
-$(document).ready(function() {
+//$(document).ready(function() {
 
-  console.log('zips abbrd city');
+  console.log('zips city');
   
   var zipsAbbrd = new Bloodhound({
   
     datumTokenizer: function(d) {
-      console.log(d);
       return Bloodhound.tokenizers.nonword(d.text);
     },
     queryTokenizer: Bloodhound.tokenizers.nonword,
     limit: 10,
     prefetch: {
-      url: './js/zips-abbrd.json',
+      url: './js/zips.json',
       filter: function(d) {
         var arr = $.map(d, function(e) {
           return { text: e['text'] };
@@ -22,8 +21,9 @@ $(document).ready(function() {
   });
 
   zipsAbbrd.initialize();
+  zipsAbbrd.clearPrefetchCache();
 
-  $('#select-zips-abbrd-city .typeahead')
+  $('#select-zips-city .typeahead')
      .typeahead({
         highlight: true
       },{
@@ -32,4 +32,4 @@ $(document).ready(function() {
         source: zipsAbbrd.ttAdapter()
       });
 
-});
+//});
